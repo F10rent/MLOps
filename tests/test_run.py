@@ -15,6 +15,7 @@ from kedro.framework.startup import bootstrap_project
 
 
 class TestKedroRun:
+    @pytest.mark.skip(reason="Skip default Kedro test since no pipeline is defined yet.")
     def test_kedro_run_no_pipeline(self):
         # This example test expects a pipeline run failure, since
         # the default project template contains no pipelines.

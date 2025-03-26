@@ -1,4 +1,12 @@
 test_ratio: 0.3
-automl_max_evals: 10
+automl_max_evals: 1
 gcp_project_id: "purchase-predict-454109"
 gcs_primary_folder: "purchase-predict-bucket3208/primary/output.csv"
+mlflow_enabled: True # Do we log metrics and artifacts to MLflow ?
+mlflow_experiment_id: 1 # Experimented ID associated to this project
+# mlflow_model_registry: "purchase_predict" # Name of model registry of this project
+
+
+mlflow_model_registry:
+  registry_name: purchase_predict  # 模型注册名称
+  stage: staging                   # 要推送到的状态（可选：staging / production / archived）
