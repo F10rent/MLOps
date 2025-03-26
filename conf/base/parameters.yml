@@ -7,6 +7,8 @@ mlflow_experiment_id: 1 # Experimented ID associated to this project
 # mlflow_model_registry: "purchase_predict" # Name of model registry of this project
 
 
+
+
 mlflow_model_registry:
   registry_name: purchase_predict  # 模型注册名称
   stage: staging                   # 要推送到的状态（可选：staging / production / archived）
